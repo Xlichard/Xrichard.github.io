@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-My-New-Post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/02/23/My-New-Post/" class="article-date">
+  <time class="dt-published" datetime="2026-02-23T06:45:12.000Z" itemprop="datePublished">2026-02-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/02/23/My-New-Post/">My New Post</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="OpenWords-开源背单词应用"><a href="#OpenWords-开源背单词应用" class="headerlink" title="OpenWords - 开源背单词应用"></a>OpenWords - 开源背单词应用</h1><p>基于 Next.js + Python 的开源背单词 Web 应用，支持多种考试词库，集成 SM-2 间隔重复记忆算法。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li><strong>多词库支持</strong>：高考、四级、六级、考研、托福、雅思、GRE、医学词汇</li>
+<li><strong>SM-2 算法</strong>：基于 SuperMemo-2 的间隔重复记忆，科学安排复习计划</li>
+<li><strong>3D 翻转卡片</strong>：Framer Motion 驱动的交互动画</li>
+<li><strong>浏览器发音</strong>：Web Speech API 原生发音，支持美式&#x2F;英式口音</li>
+<li><strong>Local-First</strong>：学习进度存储在浏览器 IndexedDB，无需注册登录</li>
+<li><strong>学习统计</strong>：每日学习量、连续打卡、分类掌握比例</li>
+</ul>
+<h2 id="数据源"><a href="#数据源" class="headerlink" title="数据源"></a>数据源</h2><table>
+<thead>
+<tr>
+<th>来源</th>
+<th>说明</th>
+<th>词条数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/skywind3000/ECDICT">ECDICT</a></td>
+<td>英汉双解词典（音标、释义、词频）</td>
+<td>76万+</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/mahavivo/english-wordlists">english-wordlists</a></td>
+<td>四六级&#x2F;考研&#x2F;高考&#x2F;托福词表</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/glutanimate/wordlist-medicalterms-en">wordlist-medicalterms-en</a></td>
+<td>医学词汇表</td>
+<td>9.8万</td>
+</tr>
+</tbody></table>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
+<li><strong>前端</strong>：Next.js 16 (App Router) + React 19 + Tailwind CSS v4 + Framer Motion</li>
+<li><strong>数据库</strong>：SQLite (better-sqlite3) + Server Actions</li>
+<li><strong>存储</strong>：IndexedDB (idb) - 客户端学习进度</li>
+<li><strong>算法</strong>：SM-2 间隔重复</li>
+<li><strong>发音</strong>：Web Speech API</li>
+</ul>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="1-构建词库数据"><a href="#1-构建词库数据" class="headerlink" title="1. 构建词库数据"></a>1. 构建词库数据</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 Python 依赖（仅需 Python 标准库）</span></span><br><span class="line"><span class="built_in">cd</span> data</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载数据源</span></span><br><span class="line">powershell -ExecutionPolicy Bypass -File download_data.ps1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建 SQLite 数据库</span></span><br><span class="line">python build_db.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-启动-Web-应用"><a href="#2-启动-Web-应用" class="headerlink" title="2. 启动 Web 应用"></a>2. 启动 Web 应用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> web</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 确保 vocab.db 在 web/ 目录下</span></span><br><span class="line">copy ..\data\vocab.db .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开发模式</span></span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
+
+<p>访问 <a target="_blank" rel="noopener" href="http://localhost:3000/">http://localhost:3000</a></p>
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">OpenWords/</span><br><span class="line">├── data/                       # 数据处理</span><br><span class="line">│   ├── raw/                    # 原始数据文件</span><br><span class="line">│   ├── build_db.py             # 数据清洗脚本</span><br><span class="line">│   ├── download_data.ps1       # 数据下载脚本</span><br><span class="line">│   └── vocab.db                # 输出的词库数据库</span><br><span class="line">├── web/                        # Next.js 应用</span><br><span class="line">│   ├── src/</span><br><span class="line">│   │   ├── app/                # 页面路由</span><br><span class="line">│   │   │   ├── page.tsx        # 首页 - 词库选择</span><br><span class="line">│   │   │   ├── learn/[category]/page.tsx  # 学习页</span><br><span class="line">│   │   │   └── dashboard/page.tsx         # 进度页</span><br><span class="line">│   │   ├── components/         # UI 组件</span><br><span class="line">│   │   │   ├── Flashcard.tsx   # 3D翻转卡片</span><br><span class="line">│   │   │   ├── AudioButton.tsx # 发音按钮</span><br><span class="line">│   │   │   └── ...</span><br><span class="line">│   │   ├── lib/                # 核心逻辑</span><br><span class="line">│   │   │   ├── actions.ts      # Server Actions</span><br><span class="line">│   │   │   ├── sm2.ts          # SM-2 算法</span><br><span class="line">│   │   │   ├── storage.ts      # IndexedDB 封装</span><br><span class="line">│   │   │   └── db.ts           # 数据库连接</span><br><span class="line">│   │   └── types/              # TypeScript 类型</span><br><span class="line">│   └── vocab.db                # 词库数据库（复制自 data/）</span><br><span class="line">└── README.md</span><br></pre></td></tr></table></figure>
+
+<h2 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h2><p>MIT</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/02/23/My-New-Post/" data-id="cuidRp4PIt9Ix5JXLE8ES7kai" data-title="My New Post" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/02/23/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2026-02-23T06:11:23.053Z" itemprop="datePublished">2026-02-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/02/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/02/23/hello-world/" data-id="cuidqnMxc6cLJc9Gfsvsap_fx" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/02/">February 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/02/23/My-New-Post/">My New Post</a>
+          </li>
+        
+          <li>
+            <a href="/2026/02/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
